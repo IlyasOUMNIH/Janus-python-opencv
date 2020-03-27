@@ -1,0 +1,15 @@
+docker run -d --rm -p 80:80 -p 7088:7088 -p 8088:8088 -p 8188:8188 -p 8004:8004/udp janus
+
+ffmpeg -i rtmp://localhost/live/test -an -c:v copy -flags global_header -bsf dump_extra -f rtp rtp://localhost:8004
+
+ffmpeg -i rtsp://192.168.1.17:8554/live?resolution=1920x960 -an -c:v copy -flags global_header -bsf dump_extra -f rtp rtp://localhost:8004
+
+
+
+ffmpeg -re -i rtmp://localhost/live/test -c:v libx264 -deadline realtime -cpu-used 15 -b:v 1536k -an -f rtp rtp://127.0.0.1:8004
+
+
+docker run --device=/dev/video0:/dev/video0 --rm -it -v /tmp/.X11-unix:/tmp/.X11-unix -e DISPLAY=unix$DISPLAY -v $PWD:/srv -p 8888:8888 borda/docker_python-opencv-ffmpeg
+
+
+python readRTMP.py | ffmpeg -f rawvideo -s 640x420 -re -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
