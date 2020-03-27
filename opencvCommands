@@ -1,0 +1,102 @@
+    1  ls
+    2  ls /srv/
+    3  ls
+    4  ls /srv/
+    5  cd /srv/
+    6  ls
+    7  python readRTMP.py 
+    8  pyhton3 readRTMP.py 
+    9  py readRTMP.py 
+   10  python readRTMP.py 
+   11  nmap 
+   12  sudo apt-get install nmap
+   13  apt-get install nmap
+   14  apt-get update
+   15  apt-get install nmap
+   16  nmap -p 1935 localhost
+   17  nmap -p 1935 192.168.1.16
+   18  python readRTMP.py 
+   19  python readRTMP.py | ffmpeg -f rtp rtp://192.168.1.16:8004
+   20  apt-get install ffmpeg
+   21  python readRTMP.py | ffmpeg -f rtp rtp://192.168.1.16:8004
+   22  nmap -p 8004 192.168.1.16
+   23  python readRTMP.py | ffmpeg -f rtp rtp://192.168.1.16:8004
+   24  nmap -p 8004 192.168.1.16
+   25  python readRTMP.py | ffmpeg -f rtp rtp://192.168.1.16:8004
+   26  python readRTMP.py | ffmpeg
+   27  python readRTMP.py | ffmpeg -f rawvideo -pixel_format bgr24 -video_size 640x480 -framerate 30 -i - foo.avi
+   28  ls
+   29  python readRTMP.py | ffmpeg -f rawvideo -i - foo.avi
+   30  python readRTMP.py | ffmpeg -f rawvideo -video_size 640x480 -i - foo.avi
+   31  ls
+   32  rm foo.avi 
+   33  python readRTMP.py | ffmpeg -f rawvideo -video_size 640x480 -i - foo.avi
+   34  python readRTMP.py | ffmpeg -f rawvideo -video_size 640x480 -i rtp rtp://192.168.1.16:8004
+   35  python readRTMP.py | ffmpeg -f rawvideo -video_size 640x480 -i rtp://192.168.1.16:8004
+   36  python readRTMP.py | ffmpeg -f rtp -video_size 640x480 -i rtp://192.168.1.16:8004
+   37  ffmpeg -i rtmp://192.168.1.16/live/test -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   38  ffmpeg -i rtmp://192.168.1.16/live/test -an -c:v copy -f rtp rtp://192.168.1.16:8004
+   39  ls
+   40  ffmpeg -re -i foo.avi -an -c:v copy -f rtp rtp://192.168.1.16:8004
+   41  ffmpeg -re -i foo.avi -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   42  python readRTMP.py | ffmpeg -f rawvideo -pix_fmt gray -s 2048x2048 -r 30 -i - -an -f avi -r 30 faa.avi
+   43  ls
+   44  python readRTMP.py | ffmpeg -f rawvideo -pix_fmt gray -s 2048x2048 -r 30 -i - -an -f rtp rtp://192.168.1.16:8004
+   45  python readRTMP.py | ffmpeg -i - -an -f rtp rtp://192.168.1.16:8004
+   46  python readRTMP.py | ffmpeg -f rawvideo -i - -an -f rtp rtp://192.168.1.16:8004
+   47  python readRTMP.py | ffmpeg -f rawvideo -s 640x420 -i - -an -f rtp rtp://192.168.1.16:8004
+   48  python readRTMP.py | ffmpeg -f rawvideo -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   49  python readRTMP.py | ffmpeg -f r -s 640x420 -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   50  python readRTMP.py | ffmpeg -f rawvideo -s 640x420 -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   51  python readRTMP.py | ffmpeg -f rawvideo -s 640x420 -re -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   52  python readRTMP.py | ffmpeg -f rawvideo -pixel_format bgr24 -video_size 640x480 -framerate 30 -re -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   53  python readRTMP.py | ffmpeg -f rawvideo -pixel_format bgr24 -video_size 640x480 -framerate 30 -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   54  ffmpeg -i /dev/video0 -b 50k -r 20 -s 858x500 -f rtp rtp://192.168.1.16:8004
+   55  ffmpeg -i /dev/video0 -b 50k -r 20 -s 858x500 -f mpegts rtp://192.168.1.16:8004
+   56  ffmpeg -i /dev/video0 -b 50k -r 20 -s 858x500 -f rtp_mpegts rtp://192.168.1.16:8004
+   57  ffmpeg -i /dev/video0 -b 50k -r 20 -s 858x500 -c:v libx264 -f rtp_mpegts rtp://192.168.1.16:8004
+   58  ffmpeg -i /dev/video0 -s 858x500 -c:v libx264 -f rtp_mpegts rtp://192.168.1.16:8004
+   59  python readRTMP.py | ffmpeg -f rawvideo -pixel_format bgr24 -video_size 640x480 -framerate 30 -i - -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   60  ls
+   61  python videoWriter.py 
+   62  ls
+   63  python videoWriter.py 
+   64  sudo apt-get update
+   65  apt-get update
+   66  apt-get install x264 libx264-dev
+   67  python videoWriter.py 
+   68  ls
+   69  clear
+   70  ls
+   71  python videoWriter.py 
+   72  ffmpeg -re -i output.mp4 -an -c:v libx264 -f rtp rtp://192.168.1.16:8004
+   73  ls
+   74  rm output.mp4 
+   75  ls
+   76  python videoWriter.py 
+   77  ffmpeg -i output.mp4 
+   78  rm output.mp4 
+   79  ls
+   80  clear
+   81  ls
+   82  python videoWriter.py 
+   83  gst-launch-1.0 --help
+   84  python videoWriter.py 
+   85  apt-get install libgstreamer1.0-0 gstreamer1.0-plugins-base gstreamer1.0-plugins-good gstreamer1.0-plugins-bad gstreamer1.0-plugins-ugly gstreamer1.0-libav gstreamer1.0-doc gstreamer1.0-tools gstreamer1.0-x gstreamer1.0-alsa gstreamer1.0-gl gstreamer1.0-gtk3 gstreamer1.0-qt5 gstreamer1.0-pulseaudio
+   86  gst-launch-1.0 --help
+   87  gst-launch-1.0 -v rtmpsrc location=rtmp://192.168.1.16/live/test ! flvdemux ! h264parse ! rtph264pay ! udpsink host=192.168.1.16 port=8004
+   88  gst-launch-1.0 -v rtmpsrc location=rtmp://192.168.1.16/live/test ! videoconvert ! x264enc noise-reduction=10000 tune=zerolatency byte-stream=true threads=4 ! mpegtsmux ! udpsink host=192.168.1.16 port=8004
+   89  gst-launch-1.0 -v rtmpsrc location=rtmp://192.168.1.16/live/test ! appsrc ! videoconvert ! x264enc noise-reduction=10000 tune=zerolatency byte-stream=true threads=4 ! mpegtsmux ! udpsink host=192.168.1.16 port=8004
+   90  gst-launch-1.0 -v rtmpsrc location=rtmp://192.168.1.16/live/test
+   91  gst-launch-1.0 -v rtmpsrc location=rtmp://192.168.1.16/live/test ! udpsink host=192.168.1.16 port=8004
+   92  gst-launch-1.0 -v rtmpsrc location=rtmp://192.168.1.16/live/test ! h264parse ! rtph264pay ! udpsink host=192.168.1.16 port=8004
+   93  python
+   94  clear
+   95  ls
+   96  python videoWriter.py 
+   97  ls
+   98  python h264.py 
+   99  python videoWriter.py 
+  100  python h264.py 
+  101  history
+  102  history > opencvCommands
